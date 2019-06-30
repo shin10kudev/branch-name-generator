@@ -1,0 +1,122 @@
+.page__wrapper {
+  background-image: linear-gradient(60deg, #273350 0, #364d78 100%);
+  margin: 0;
+  min-height: 100vh;
+}
+@media (min-width: 768px) {
+  .page__wrapper {
+    padding: 32px 16px;
+  }
+}
+.page__wrapper input,
+.page__wrapper select {
+  border-radius: 50px;
+  box-shadow: none;
+  padding-left: 16px;
+}
+.page__wrapper input:focus,
+.page__wrapper select:focus {
+  border: 2px solid #b3d6ff;
+  box-shadow: none;
+}
+.page__wrapper select {
+  cursor: pointer;
+  padding: 0 32px 0 16px;
+}
+
+.content__wrapper {
+  background-color: #fff;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 40px 16px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .content__wrapper {
+    border-radius: 4px;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.075);
+    height: auto;
+    max-width: 500px;
+  }
+}
+.content__wrapper .wrapper__title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.content__wrapper fieldset {
+  margin-bottom: 20px;
+}
+.content__wrapper fieldset input[type="radio"] {
+  margin-bottom: 0;
+}
+
+.output__wrapper {
+  background-color: #2d79ff;
+  border-radius: 50px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.12);
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 20px 12px 0;
+  overflow: auto;
+  padding: 18px 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.output__wrapper:hover {
+  background-color: #4486fb;
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+.output__wrapper:active {
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.success-msg {
+  color: #22d360;
+  font-size: 14px;
+  margin: 12px 0;
+  text-align: center;
+}
+
+.radio-switch {
+  text-align: center;
+}
+.radio-switch label {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #434b6f;
+  float: left;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  padding: 16px;
+  transition: background-color 0.2s ease;
+  width: 50%;
+}
+.radio-switch label:not(:last-child) {
+  border-right: 0;
+}
+.radio-switch input:checked + label {
+  background-color: #eeeef7;
+}
+.issue-link {
+  bottom: 20px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+.issue-link a:hover,
+.issue-link a:active {
+  text-decoration: underline;
+}
+@media (min-width: 768px) {
+  .issue-link a {
+    color: #fff;
+  }
+  .issue-link a:hover,
+  .issue-link a:active {
+    color: #efefef;
+  }
+}
